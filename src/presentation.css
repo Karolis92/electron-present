@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

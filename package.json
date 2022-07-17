@@ -11,6 +11,9 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
+  "author": {
+    "name": "Karolis92"
+  },
   "keywords": [],
   "license": "MIT",
   "config": {
@@ -48,11 +51,16 @@
               "entryPoints": [
                 {
                   "html": "./src/index.html",
-                  "js": "./src/renderer.ts",
+                  "js": "./src/index.ts",
                   "name": "main_window",
                   "preload": {
                     "js": "./src/preload.ts"
                   }
+                },
+                {
+                  "html": "./src/presentation.html",
+                  "js": "./src/presentation.ts",
+                  "name": "presentation_window"
                 }
               ]
             }
